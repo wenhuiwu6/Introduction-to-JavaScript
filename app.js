@@ -310,6 +310,7 @@ console.log(z(3, 6));
 /* const calculateBMI = function (person) {
   return (person.weight / person.height ** 2) * 10000;
 }; */
+/*
 const calculateBMI = function (person) {
   let BMI = (person.weight / person.height ** 2) * 10000;
   return BMI;
@@ -337,3 +338,5 @@ const compareBMI = function (person) {
 };
 //console.log(calculateBMI(James));
 compareBMI(James);
+*/
+
