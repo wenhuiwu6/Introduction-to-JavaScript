@@ -1,6 +1,6 @@
 // function enter(hasKey, hasMagic, isBanned){
 //     if((hasKey == true || hasMagic == true) && !isBanned) {
-//         console.log("you're princess is in another castle");
+//         console.log("your princess is in another castle");
 //     } else {
 //         console.log("cannot enter");
 //     }
@@ -23,7 +23,7 @@
 // function middle (x,y,z) {
 //   if ((x >= y && x <= z) || (x <= y && x >= z)) {
 //     console.log ("x is in the middle");
-//   } else if ((y >= x && y>= z) || ())
+//   } else if (y >= x && y>= z)
 
 // }
 
@@ -77,3 +77,15 @@ language(sentence);
 // } else {
 //   console.log("Probably French");
 // }
+
+function occupied(y, t) {
+  let occupied = 0;
+  for (let i = 0; i < y.length; i++) {
+    console.log(y[i], t[i]);
+    if (y[i] === "c" && t[i] === "c") {
+      occupied++;
+    }
+  }
+  console.log(occupied);
+}
+occupied("cc..c", ".cc..");
