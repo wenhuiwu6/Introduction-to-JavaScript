@@ -48,26 +48,26 @@
 // const found = students.find((student) => student === "London");
 // console.log(found);
 
-const sentence =
-  "The red cat sat on the mat. Why are you so sad cat? Don't ask that.";
+// const sentence =
+//   "The red cat sat on the mat. Why are you so sad cat? Don't ask that.";
 
-function language(sentence) {
-  let t = 0;
-  let s = 0;
-  for (let i = 0; i < sentence.length; i++) {
-    if (sentence[i] === "S" || sentence[i] === "s") {
-      s = s + 1;
-    } else if (sentence[i] === "T" || sentence[i] === "t") {
-      t++;
-    }
-  }
-  if (t > s) {
-    console.log("English");
-  } else {
-    console.log("French");
-  }
-}
-language(sentence);
+// function language(sentence) {
+//   let t = 0;
+//   let s = 0;
+//   for (let i = 0; i < sentence.length; i++) {
+//     if (sentence[i] === "S" || sentence[i] === "s") {
+//       s = s + 1;
+//     } else if (sentence[i] === "T" || sentence[i] === "t") {
+//       t++;
+//     }
+//   }
+//   if (t > s) {
+//     console.log("English");
+//   } else {
+//     console.log("French");
+//   }
+// }
+// language(sentence);
 
 // if (s && S < t && T) {
 //   console.log("Probably English");
@@ -78,14 +78,27 @@ language(sentence);
 //   console.log("Probably French");
 // }
 
-function occupied(y, t) {
-  let occupied = 0;
-  for (let i = 0; i < y.length; i++) {
-    console.log(y[i], t[i]);
-    if (y[i] === "c" && t[i] === "c") {
-      occupied++;
-    }
-  }
-  console.log(occupied);
-}
-occupied("cc..c", ".cc..");
+// function occupied(y, t) {
+//   let occupied = 0;
+//   for (let i = 0; i < y.length; i++) {
+//     console.log(y[i], t[i]);
+//     if (y[i] === "c" && t[i] === "c") {
+//       occupied++;
+//     }
+//   }
+//   console.log(occupied);
+// }
+// occupied("cc..c", ".cc..");
+
+const london = {
+  firstName: "London",
+  lastName: "Valentine",
+  graduated: false,
+  DOB: 2010,
+  sublings: ["Paris", "Rio"],
+  age: function () {
+    return year - this.DOB;
+  },
+};
+
+console.log(london.siblings);
